@@ -1,0 +1,648 @@
+:root {
+    --textMain: Kanit, Verdana;
+    --color-bg-nav: #011A36;
+    --color-letter-nav: white;
+}
+
+/* globals */
+
+body {
+    box-sizing: content-box;
+    font-family: var(--textMain);
+    font-size: 16px;
+    /*1rem=10px*/
+    display: flex;
+    min-height: 100vh;
+    flex-flow: column wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+
+}
+
+li>a {
+    color: var(--color-letter-nav);
+
+}
+
+li:hover {
+    background-color: #002652;
+    transition: .3s;
+
+}
+
+a:hover {
+    color: aquamarine;
+}
+
+button {
+    margin: .5rem;
+}
+
+footer {
+    background-color: var(--color-bg-nav);
+    padding: 1rem 0;
+    width: 100%;
+    margin: auto 0 0 0;
+    color: var(--color-letter-nav);
+}
+
+td {
+    padding: 0 1rem;
+}
+
+.a__nav-link {
+    color: var(--color-letter-nav);
+}
+
+.header__navbar-content {
+    width: 100%;
+    background-color: var(--color-bg-nav);
+    color: var(--color-letter-nav);
+}
+
+.div__nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+.nav__content-links {
+    display: flex;
+}
+
+.h1__title {
+    margin: 0 auto;
+    padding: 5rem 0;
+    font-size: 5rem;
+}
+
+.p__text-info {
+    width: 60rem;
+    height: auto;
+}
+
+.section__content-column {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__content {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.main__content-column {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.section__content-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+
+.div__content-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.div__content-column {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 30rem;
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.div__redes {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+}
+
+div>p>a {
+    color: white;
+}
+
+.aside__content {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.article__content {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* class page:index*/
+
+.p__title-index {
+    text-align: justify;
+    width: 100%;
+}
+
+.div__main-items {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.div__content-eo {
+    display: flex;
+    gap: 4rem;
+    width: 70%;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.ul__links {
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+}
+
+
+.img__fotos {
+    height: 30rem;
+    width: auto;
+}
+
+.section__text {
+    width: 100%;
+}
+
+.section__img {
+    width: 90%;
+}
+
+/* slider - index */
+
+#div__slider-content {
+    font-family: var(--textMain);
+    margin: auto;
+    background-color: white;
+    max-width: 80rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#div__slider-content>ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#div__slider-content>ul.slider {
+    position: relative;
+    max-width: 80rem;
+    width: 100%;
+    height: 30rem;
+}
+
+#div__slider-content>ul.slider h1 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+    left: 50%;
+    top: 10rem;
+    transform: translate(-50%, -50%);
+}
+
+#div__slider-content>ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff;
+}
+
+#div__slider-content>ul.slider li img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+#div__slider-content>ul.slider li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+}
+
+#div__slider-content>ul.slider li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#div__slider-content>.menu {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+#div__slider-content>.menu li {
+    display: inline-block;
+
+}
+
+#div__slider-content>.menu li a {
+    background-color: grey;
+    border-radius: 100%;
+    color: white;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 4rem;
+    padding: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    width: 4rem;
+}
+
+/* fin slide en index */
+
+
+/* class page:submarino */
+.aside__text {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    padding: 4rem 0;
+    width: 40%;
+}
+
+.p__info {
+    justify-content: center;
+    text-align: center;
+}
+
+.p__info:hover {
+    transform: translateX(2rem), 2s;
+}
+
+/* class page:museo */
+.article__text {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.aside__content-museo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.sect__content {
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.p__text-info,
+.img__museo {
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+/* class page: rp */
+
+.section__content-rp {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.article__content-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+
+}
+
+.p__text-rp {
+    text-align: center;
+    width: 100%;
+}
+
+.iframe__video-rp {
+    width: 100%;
+}
+
+.img__muchacho {
+    width: 80%;
+}
+
+/* class page: nosotros */
+.section__content-nosotros {
+    width: auto;
+    padding: 3rem;
+}
+
+.p__text-title {
+    width: 50%;
+    text-align: center;
+}
+
+.img__nosotros {
+    width: 90%;
+}
+
+.img__nosotros1 {
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+
+}
+
+
+.aside__content-nosotros {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.section__contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.fieldset__contact {
+    width: auto;
+    padding: 2rem;
+}
+
+.section__contactos>p {
+    text-align: center;
+}
+
+.form__contactos {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.btn__contactos {
+    width: 10rem;
+    height: 2rem;
+    margin: 1.5rem 0 0 0;
+    border-radius: 1rem;
+}
+
+.p__text-nosotros {
+    text-align: center;
+    width: 100%;
+}
+
+.section__table-content {
+    margin: 5rem 0 5rem 0;
+}
+
+/* footer */
+.div__redes {}
+
+/* responsive */
+
+
+@media(max-width: 1170px) {
+
+    /* globals */
+    .ul__links {
+        justify-items: center;
+        align-items: center;
+    }
+
+    .footer__content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    /* index */
+    .div__content-eo {
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* museo */
+    .aside__content-museo {
+        width: 100%;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        padding: 2rem;
+        gap: 0;
+    }
+
+    .img__museo {
+        width: 90%;
+        box-sizing: content-box;
+    }
+
+    .p__text-1,
+    .p__text-2 {
+        width: 80%;
+    }
+
+    /* RP */
+    .article__content-grid,
+    .section__content-rp {
+        width: auto;
+        padding: 3rem;
+        gap: 2rem;
+    }
+
+    .iframe__video-rp {
+        width: 100%;
+    }
+
+    .p__text-rp {
+        width: 100%;
+    }
+
+    .img__muchacho {
+        width: 100%;
+    }
+
+    /* Nosotros */
+
+    /* Entradas */
+    .main__content-entradas {
+        width: 100%;
+    }
+
+    .div__section-entradas {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .section__content-flex {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .div__content-column {
+        width: 50%;
+    }
+}
+
+@media(max-width:785px) {
+
+    /* Globals */
+
+    .h1__title {
+        font-size: 4rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .div__content-eo {
+        padding: 0;
+    }
+
+    .div__nav-items {
+        flex-flow: column wrap;
+        padding: 0 2rem;
+        gap: 2rem;
+    }
+
+    .ul__links {
+        justify-items: center;
+        align-items: center;
+    }
+
+    .footer__content {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    /* Index */
+    .p__title-index {
+        padding: 0 0 2rem 0;
+    }
+
+    /* museo y RP*/
+    .sect__content {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .article__text {
+        width: 100%;
+    }
+
+    .aside__content-museo,
+    .article__content-grid,
+    .aside__content-nosotros {
+        width: 80%;
+        margin: 0 auto;
+        padding: 5rem 0;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+        gap: 2rem;
+    }
+
+    .img__museo2,
+    .img__muchacho {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .img__muchacho {
+        width: 90%;
+    }
+
+    .img__nosotros2 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .p__text-1,
+    .p__text-2,
+    .p__text-rp {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.6rem;
+    }
+
+    /* nosotros */
+    .section__contactos {
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .p__text-nosotros {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .section__contactos {
+        padding: 2rem;
+    }
+
+    .section__contactos,
+    .section__contactos>p,
+    .fieldset__contact {
+        width: 80%;
+    }
+
+    /* entradas */
+    .section__content-flex {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .div__content-column {
+        width: 80%;
+    }
+}
