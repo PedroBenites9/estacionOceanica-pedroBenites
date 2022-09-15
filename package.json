@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-eo",
+  "version": "1.0.0",
+  "description": "Proyecto Estacion Oceanica",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/stlye.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroBenites9/estacionOceanica-project.git"
+  },
+  "author": "Pedro Benites",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroBenites9/estacionOceanica-project/issues"
+  },
+  "homepage": "https://github.com/PedroBenites9/estacionOceanica-project#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
