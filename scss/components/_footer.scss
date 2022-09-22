@@ -1,25 +1,14 @@
 /* footer */
-footer {
+.footer {
     background-color: var(--bs-blue-dark);
-    padding: 1rem 0;
-    width: 100%;
-    margin: auto 0 0 0;
     color: var(--bs-white);
 }
-
 
 .div__content-column {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     width: 30rem;
-}
-
-.footer__content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
 }
 
 .div__redes {
@@ -36,4 +25,8 @@ footer {
 
 div>p>a {
     color: white;
+}
+
+.footer .img__footer{
+    text-align: center;
 }

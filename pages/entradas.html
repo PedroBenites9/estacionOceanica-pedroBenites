@@ -12,20 +12,63 @@
 </head>
 
 <body>
-    <header class="header__navbar-content">
-        <div class="div__nav-items">
-            <a href="../index.html">
-                <img src="../assets/img/index/logo.PNG" alt="logoEO">
-            </a>
-            <nav>
-                <ul class="ul__links">
-                    <li><a href="../Pages/submarino.html">Odisea Submarina</a></li>
-                    <li><a href="../Pages/museo_del_mar.html">Museo del Mar</a></li>
-                    <li><a href="../Pages/rp.html">Rescate Profundo</a></li>
-                    <li><a href="../Pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="../Pages/entradas.html">Entradas</a></li>
-                </ul>
-            </nav>
+    <header>
+        <div class="">
+            <div class="collapse nav__bg" id="navbarHeader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7 py-4">
+                            <h4 class="text-white">Mas informacion</h4>
+                            <p class="text-white">Todavia con dudas? Segui a los siguientes links y asombrate de
+                                nuestras
+                                propuestas que podemos ofrecerte a vos y a toda tu familia!</p>
+                        </div>
+                        <div class="col-sm-4 offset-md-1 py-4">
+                            <h4 class="text-white">Links</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="museo_del_mar.html" class="text-white">Museo del Mar</a></li>
+                                <li><a href="submarino.html" class="text-white">Odisea Submarina</a></li>
+                                <li><a href="rp.html" class="text-white">Rescate Profundo</a></li>
+                                <li><a href="nosotros.html" class="text-white">Sobre Nosotros</a></li>
+                                <li><a href="entradas.html" class="text-white">Precios</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark nav__bg shadow-sm">
+                <div class="container ">
+                    <a href="../index.html">
+                        <img class="img__logo" src="../assets/img/index/logo.PNG" alt="">
+                    </a>
+                    <div class="d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
+                        <ul class="nav justify-content-right">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="submarino.html">Odisea Submarina</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="rp.html">Rescate Profundo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="museo_del_mar.html">Museo del Mar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="entradas.html">Entradas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nostros</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <h1 class="h1__title">Entradas</h1>
@@ -120,47 +163,56 @@
         </div>
     </main>
     <footer>
-        <div class="footer__content">
-            <div class="div__redes-content">
-                <div>
-                    <p class="p__title-footer">Nuestras redes</p>
+        <div class="container-fluid footer">
+            <div class="row p-5">
+                <div class="col-xs-12 col-md-6 col-lg-3 img__footer ">
+                    <img class="" src="../assets/img/index/logo.PNG" alt="logo__footer">
                 </div>
-                <div class="div__redes">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
-                            width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                        </svg>
-                        <p><a href="https://www.facebook.com/estacionoceanica"> Facebook</a></p>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="fs-5 fw-bolder">Redes Sociales</p>
+                    <div class="mb-2">
+                        <a class="text-white text-decoration-line" href="https://www.facebook.com/estacionoceanica">
+                            Facebook</a>
                     </div>
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
-                            width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <rect x="4" y="4" width="16" height="16" rx="4" />
-                            <circle cx="12" cy="12" r="3" />
-                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                        </svg>
-                        <p><a href="https://www.instagram.com/estacionoceanica/">Instagram</a></p>
+                    <div class="mb-2">
+                        <a class="text-white text-decoration-line"
+                            href="https://www.instagram.com/estacionoceanica/">Instagram</a>
+                    </div>
+                    <div class="mb-2">
+                        <a href="#" class="text-secondary text-decoration-none"></a>
                     </div>
                 </div>
-            </div>
-            <div class="div__contactos ">
-                <div>
-                    <p class="p__title-footer">Contactos</p>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="fs-5 fw-bolder">links</p>
+                    <div class="mb-2">
+                        <a href="museo_del_mar.html" class="text-white text-decoration-line">Museo del Mar</a>
+                    </div>
+                    <div class="mb-2">
+                        <a href="submarino.html" class="text-white text-decoration-line">Odisea Submarina</a>
+                    </div>
+                    <div class="mb-2">
+                        <a href="rp.html" class="text-white text-decoration-line">Rescate Profundo</a>
+                    </div>
+                    <div class="mb-2">
+                        <a href="nosotros.html" class="text-white text-decoration-line">Nosotros</a>
+                    </div>
+                    <div class="mb-2">
+                        <a href="entradas.html" class="text-white text-decoration-line">Entradas</a>
+                    </div>
                 </div>
-                <p>+54 1121835859</p>
-                <p>informes@estacionoceanica.com.ar</p>
-            </div>
-            <div class="div__direccion">
-                <div>
-                    <p class="p__title-footer">Direccion</p>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="fs-5 fw-bolder">Contacto</p>
+                    <div class="mb-2">
+                        +54 1121835859
+                    </div>
+                    <div class="mb-2">
+                        <a href="#" class="text-white text-decoration-line">informes@estacionoceanica.com.ar</a>
+                    </div>
+                    <div class="mb-2">
+                        <p>Gral. Las Heras 4155, C1425 CABA</p>
+                        <p>De 11:00hs hasta 18:00hs</p>
+                    </div>
                 </div>
-                <p>Gral. Las Heras 4155, C1425 CABA</p>
-                <p>De 11:00hs hasta 18:00hs</p>
             </div>
         </div>
     </footer>
