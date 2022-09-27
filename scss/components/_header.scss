@@ -1,9 +1,35 @@
-.img__logo:hover{
-    outline: solid .15rem var(--bs-blue-light) ;
-    transition: outline .1s ease-in-out  ;
-    border-radius: 1rem;
+.img{
+    &__logo{
+        transition: .5s;
+    }
+    &__logo:hover{
+        transform: scale(1);
+    }
 }
-
-.nav-link{
-    color: white;
+.nav{
+    &-link{
+        color: white;
+        transition: .5s;
+    }
+    &-link:hover{
+        background-color: #002652;
+        border-radius: 1rem;
+        
+    }
+}
+@media screen and (max-width:767px){ 
+    
+    .text{
+        &__header{
+            text-align: center;
+        }
+    }
+    .ul{
+        &__li{
+            padding: .5rem;
+        }
+        &__li-text{
+            text-decoration: none;
+        }
+    }
 }

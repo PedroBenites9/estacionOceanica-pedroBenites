@@ -1,6 +1,7 @@
 /* footer */
+
 .footer {
-    background-color: var(--bs-blue-dark);
+    background-color: map-get($palette, --bs-blue-dark );
     color: var(--bs-white);
 }
 
@@ -29,4 +30,15 @@ div>p>a {
 
 .footer .img__footer{
     text-align: center;
+}
+
+@media screen and (max-width:767px){ 
+    .footer{
+        &__content{
+            text-align: center;
+        }
+        &__content-items{
+            padding: 1rem;
+        }
+    }
 }

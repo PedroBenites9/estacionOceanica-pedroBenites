@@ -1,0 +1,36 @@
+.form{
+    &__contactos{
+        width: 30rem;
+    }
+    &__contact{
+        border: 1px solid black;
+        padding: 1rem;
+    }
+    &__legend{
+        text-decoration: underline;
+        text-align: center;
+    }
+}
+.img{
+    &__nosotros{
+        width: 35rem;
+    }
+}
+
+@media screen and (max-width:767px){ 
+    .aside{
+         &__content{
+             width: 100%;
+         }
+    } 
+    .img{
+        &__nosotros{
+            width: 100%;
+        }
+    }
+    .form{
+        &__contact, &__contactos{
+            width: 100%;
+        }
+    }
+ }

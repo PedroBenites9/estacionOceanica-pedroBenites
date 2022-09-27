@@ -5,37 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style1.css">
     <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon">
-
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/stlye.css">
     <title>Entradas</title>
 </head>
 
 <body>
+    <!-- inicio Header -->
     <header>
-        <div class="">
+        <div>
+            <!-- inicio de header collapse para mobil -->
             <div class="collapse nav__bg" id="navbarHeader">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-md-7 py-4">
-                            <h4 class="text-white">Mas informacion</h4>
-                            <p class="text-white">Todavia con dudas? Segui a los siguientes links y asombrate de
+                            <h4 class="text-white text__header">Mas informacion</h4>
+                            <p class="text-white text__header">Todavia con dudas? Segui a los siguientes links y
+                                asombrate de
                                 nuestras
                                 propuestas que podemos ofrecerte a vos y a toda tu familia!</p>
                         </div>
-                        <div class="col-sm-4 offset-md-1 py-4">
+                        <div class="col-sm-4 offset-md-1 py-4 text__header">
                             <h4 class="text-white">Links</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="museo_del_mar.html" class="text-white">Museo del Mar</a></li>
-                                <li><a href="submarino.html" class="text-white">Odisea Submarina</a></li>
-                                <li><a href="rp.html" class="text-white">Rescate Profundo</a></li>
-                                <li><a href="nosotros.html" class="text-white">Sobre Nosotros</a></li>
-                                <li><a href="entradas.html" class="text-white">Precios</a></li>
+                            <ul class="list-unstyled ">
+                                <li class="ul__li"><a href="museo_del_mar.html" class="text-white ul__li-text">Museo del
+                                        Mar</a></li>
+                                <li class="ul__li"><a href="submarino.html" class="text-white ul__li-text">Odisea
+                                        Submarina</a>
+                                </li>
+                                <li class="ul__li"><a href="rp.html" class="text-white ul__li-text">Rescate
+                                        Profundo</a></li>
+                                <li class="ul__li"><a href="nosotros.html" class="text-white ul__li-text">Sobre
+                                        Nosotros</a></li>
+                                <li class="ul__li"><a href="entradas.html" class="text-white ul__li-text">Precios</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- fin header collapse para mobil -->
+            <!-- inicio de header para desktop  -->
             <div class="navbar navbar-dark nav__bg shadow-sm">
                 <div class="container ">
                     <a href="../index.html">
@@ -51,7 +62,8 @@
                     <div class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
                         <ul class="nav justify-content-right">
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="submarino.html">Odisea Submarina</a>
+                                <a class="nav-link " aria-current="page" href="submarino.html">Odisea
+                                    Submarina</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="rp.html">Rescate Profundo</a>
@@ -69,106 +81,122 @@
                     </div>
                 </div>
             </div>
+            <!-- fin de header para desktop  -->
         </div>
     </header>
+    <!-- fin Header -->
     <h1 class="h1__title">Entradas</h1>
     <main class="main__content-entradas">
-        <div class="div__section-entradas">
-            <section class="section__content-flex">
-                <div class="div__content-column">
-                    <img src="../assets/img/entradas/Box pasaportes ticketera - Mayor-promo.jpg" alt="img_entrada1">
-                    <small></small>
-                    <button type="submit">Comprar</button>
-                    <select name="" id="">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                    </select>
+        <div class=" div__section-entradas">
+            <section class="d-flex flex-row justify-content-center align-items-center gap-5 flex-wrap">
+                <div class="d-flex flex-column border border-gray border-4 section__img-entradas">
+                    <img class="" src="../assets/img/entradas/Box pasaportes ticketera - Mayor-promo.jpg"
+                        alt="img_entrada1">
+                    <div class="p-2 d-flex align-items-center justify-content-center gap-3">
+                        <button type="button" class="btn btn-outline-dark" type="submit">Comprar</button>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="div__content-column">
-                    <img src="../assets/img/entradas/Box pasaportes ticketera - Menor-promo.jpg" alt=" img_entrada2">
-                    <button type="submit">Comprar</button>
-                    <select name="" id="">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                    </select>
+                <div class="d-flex flex-column border border-gray border-4 section__img-entradas">
+                    <img class="" src="../assets/img/entradas/Box pasaportes ticketera - Menor-promo.jpg"
+                        alt="img_entrada1">
+                    <div class="p-2 d-flex align-items-center justify-content-center gap-3">
+                        <button type="button" class="btn btn-outline-dark" type="submit">Comprar</button>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="div__content-column">
-                    <!-- Falta añadir imagen -->
-                    <img src="../assets/img/entradas/rp.jpg" alt=" img_entrada3">
-                    <button type="submit">Comprar</button>
-                    <select name="" id="">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                    </select>
+                <div class="d-flex flex-column border border-gray border-4 section__img-entradas">
+                    <img class="" src="../assets/img/entradas/rp.jpg" alt="img_entrada1">
+                    <div class="p-2 d-flex align-items-center justify-content-center gap-3">
+                        <button type="button" class="btn btn-outline-dark" type="submit">Comprar</button>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                        </select>
+                    </div>
                 </div>
             </section>
         </div>
-        <div class="main__content-column">
-
-            <section class="section__table-content">
-                <p class="p__text-nosotros">Precios desde cartelera</p>
+        <div>
+            <section class="containter m-5 d-flex flex-column align-items-center justify-content-center">
+                <p>Precios desde cartelera</p>
                 <!-- tabla precios -->
-                <article>
+                <article class="section__article-content">
                     <table>
                         <thead>
                             <tr>
-                                <th>Actividades</th>
-                                <th>Publico</th>
-                                <th>Precio</th>
+                                <th class="table__cabecera table__cabecera-title">Actividades</th>
+                                <th class="table__cabecera">Publico</th>
+                                <th class="table__cabecera">Precio</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Odisea Submarina</td>
+                        <tbody class="table__body">
+                            <tr class="table__item">
+                                <td class="table__edades-sub">Odisea Submarina</td>
                                 <td>ATP</td>
                                 <td>$1500</td>
                             </tr>
-                            <tr>
-                                <td>Realidad Virtual</td>
+                            <tr class="table__item">
+                                <td class="table__edades-sub">Realidad Virtual</td>
                                 <td>+12</td>
                                 <td>$1000</td>
                             </tr>
-                            <tr>
-                                <td>Odisea Submarina + Ralidad Virtual</td>
+                            <tr class="table__item">
+                                <td class="table__edades-sub">Odisea Submarina + Ralidad Virtual</td>
                                 <td>+12</td>
                                 <td>$2000</td>
 
                             </tr>
-                            <tr>
-                                <td>Pasaporte Estacion Oceanica</td>
+                            <tr class="table__item">
+                                <td class="table__edades-sub">Pasaporte Estacion Oceanica</td>
                                 <td>ATP</td>
                                 <td>$2000</td>
                             </tr>
-                            <tr>
-                                <td>Maquillaje Artistico</td>
+                            <tr class="table__item">
+                                <td class="table__edades-sub">Maquillaje Artistico</td>
                                 <td>ATP</td>
                                 <td>$500</td>
                             </tr>
                         </tbody>
                     </table>
                 </article>
+                <div class="d-flex flex-column">
+                    <p class="p__container-cond p__text-info__center">*Los descuentos se aplican presencialmente en
+                        Estacion Oceanica.</p>
+                    <p class="p__text-info__center">**Una vez comprado el boleto desde la pagina web, usted ya tenie
+                        reservado un espacio para el
+                        ingreso, los horarios se dispone presencialmente dentro de Estacino Oceanica.</p>
+                </div>
             </section>
         </div>
     </main>
+    <!-- inicio footer -->
     <footer>
         <div class="container-fluid footer">
-            <div class="row p-5">
+            <div class="row p-5 footer__content">
                 <div class="col-xs-12 col-md-6 col-lg-3 img__footer ">
                     <img class="" src="../assets/img/index/logo.PNG" alt="logo__footer">
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div
+                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
                     <p class="fs-5 fw-bolder">Redes Sociales</p>
                     <div class="mb-2">
                         <a class="text-white text-decoration-line" href="https://www.facebook.com/estacionoceanica">
@@ -182,25 +210,27 @@
                         <a href="#" class="text-secondary text-decoration-none"></a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div
+                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
                     <p class="fs-5 fw-bolder">links</p>
                     <div class="mb-2">
-                        <a href="museo_del_mar.html" class="text-white text-decoration-line">Museo del Mar</a>
+                        <a href="pages/museo_del_mar.html" class="text-white text-decoration-line">Museo del Mar</a>
                     </div>
                     <div class="mb-2">
-                        <a href="submarino.html" class="text-white text-decoration-line">Odisea Submarina</a>
+                        <a href="pages/submarino.html" class="text-white text-decoration-line">Odisea Submarina</a>
                     </div>
                     <div class="mb-2">
-                        <a href="rp.html" class="text-white text-decoration-line">Rescate Profundo</a>
+                        <a href="pages/rp.html" class="text-white text-decoration-line">Rescate Profundo</a>
                     </div>
                     <div class="mb-2">
-                        <a href="nosotros.html" class="text-white text-decoration-line">Nosotros</a>
+                        <a href="pages/nosotros.html" class="text-white text-decoration-line">Nosotros</a>
                     </div>
                     <div class="mb-2">
-                        <a href="entradas.html" class="text-white text-decoration-line">Entradas</a>
+                        <a href="pages/entradas.html" class="text-white text-decoration-line">Entradas</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div
+                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
                     <p class="fs-5 fw-bolder">Contacto</p>
                     <div class="mb-2">
                         +54 1121835859
@@ -214,8 +244,10 @@
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
+    <!-- fin footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

@@ -12,30 +12,41 @@
 </head>
 
 <body>
+    <!-- inicio Header -->
     <header>
-        <div class="">
+        <div>
+            <!-- inicio de header collapse para mobil -->
             <div class="collapse nav__bg" id="navbarHeader">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-md-7 py-4">
-                            <h4 class="text-white">Mas informacion</h4>
-                            <p class="text-white">Todavia con dudas? Segui a los siguientes links y asombrate de
+                            <h4 class="text-white text__header">Mas informacion</h4>
+                            <p class="text-white text__header">Todavia con dudas? Segui a los siguientes links y
+                                asombrate de
                                 nuestras
                                 propuestas que podemos ofrecerte a vos y a toda tu familia!</p>
                         </div>
-                        <div class="col-sm-4 offset-md-1 py-4">
+                        <div class="col-sm-4 offset-md-1 py-4 text__header">
                             <h4 class="text-white">Links</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="museo_del_mar.html" class="text-white">Museo del Mar</a></li>
-                                <li><a href="submarino.html" class="text-white">Odisea Submarina</a></li>
-                                <li><a href="rp.html" class="text-white">Rescate Profundo</a></li>
-                                <li><a href="nosotros.html" class="text-white">Sobre Nosotros</a></li>
-                                <li><a href="entradas.html" class="text-white">Precios</a></li>
+                            <ul class="list-unstyled ">
+                                <li class="ul__li"><a href="museo_del_mar.html" class="text-white ul__li-text">Museo del
+                                        Mar</a></li>
+                                <li class="ul__li"><a href="submarino.html" class="text-white ul__li-text">Odisea
+                                        Submarina</a>
+                                </li>
+                                <li class="ul__li"><a href="rp.html" class="text-white ul__li-text">Rescate
+                                        Profundo</a></li>
+                                <li class="ul__li"><a href="nosotros.html" class="text-white ul__li-text">Sobre
+                                        Nosotros</a></li>
+                                <li class="ul__li"><a href="entradas.html" class="text-white ul__li-text">Precios</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- fin header collapse para mobil -->
+            <!-- inicio de header para desktop  -->
             <div class="navbar navbar-dark nav__bg shadow-sm">
                 <div class="container ">
                     <a href="../index.html">
@@ -51,7 +62,8 @@
                     <div class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
                         <ul class="nav justify-content-right">
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="submarino.html">Odisea Submarina</a>
+                                <a class="nav-link " aria-current="page" href="submarino.html">Odisea
+                                    Submarina</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="rp.html">Rescate Profundo</a>
@@ -69,14 +81,16 @@
                     </div>
                 </div>
             </div>
+            <!-- fin de header para desktop  -->
         </div>
     </header>
+    <!-- fin Header -->
     <h1 class="h1__title">
         Museo del Mar
     </h1>
     <div class="container">
         <section class="sect__content">
-            <article class="article__text">
+            <article class="p__text-info">
                 En esta sala se presenta un recorrido por las eras geológicas que marcaron la evolución en el océano,
                 las
                 distintas especies que lo habitaron, sus interrelaciones y roles biológicos. También encontrarás algunas
@@ -91,7 +105,8 @@
                 impactos.
             </article>
             <aside class="d-flex flex-row flex-wrap justify-content-between align-items-center gap-3 m-3">
-                <p class="p__text-info p__text-1"> Dentro del recorrido del museo del mar vamos viajar atraves del
+
+                <p class="p__text-info__center"> Dentro del recorrido del museo del mar vamos viajar atraves del
                     tiempo
                     y aprenderemos acerca de los inicios de la vida en la tierra en el periodo cambrico. Dentro de la
                     misma
@@ -105,7 +120,7 @@
                 </p>
                 <img class="img__museo img__museo1" src=" ../assets/img/museo/cameroceras.jpg" alt="img_Museo1">
                 <img class="img__museo img__museo2" src="../assets/img/museo/museo-del-mar.jpg" alt="img_Museo2">
-                <p class="p__text-info p__text-2"> Cada maqueta de estas especies es la representacion exacta de cada
+                <p class="p__text-info__center"> Cada maqueta de estas especies es la representacion exacta de cada
                     especie a escala tamaño real. Nuestros excelenticimos guias nos relataran cada acontencimiento en
                     los
                     diferentes periodos, y nos detallaran como las especies convivieron entre ellos.
@@ -115,13 +130,15 @@
             </aside>
         </section>
     </div>
+    <!-- inicio footer -->
     <footer>
         <div class="container-fluid footer">
-            <div class="row p-5">
+            <div class="row p-5 footer__content">
                 <div class="col-xs-12 col-md-6 col-lg-3 img__footer ">
                     <img class="" src="../assets/img/index/logo.PNG" alt="logo__footer">
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div
+                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
                     <p class="fs-5 fw-bolder">Redes Sociales</p>
                     <div class="mb-2">
                         <a class="text-white text-decoration-line" href="https://www.facebook.com/estacionoceanica">
@@ -135,25 +152,27 @@
                         <a href="#" class="text-secondary text-decoration-none"></a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div
+                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
                     <p class="fs-5 fw-bolder">links</p>
                     <div class="mb-2">
-                        <a href="museo_del_mar.html" class="text-white text-decoration-line">Museo del Mar</a>
+                        <a href="pages/museo_del_mar.html" class="text-white text-decoration-line">Museo del Mar</a>
                     </div>
                     <div class="mb-2">
-                        <a href="submarino.html" class="text-white text-decoration-line">Odisea Submarina</a>
+                        <a href="pages/submarino.html" class="text-white text-decoration-line">Odisea Submarina</a>
                     </div>
                     <div class="mb-2">
-                        <a href="rp.html" class="text-white text-decoration-line">Rescate Profundo</a>
+                        <a href="pages/rp.html" class="text-white text-decoration-line">Rescate Profundo</a>
                     </div>
                     <div class="mb-2">
-                        <a href="nosotros.html" class="text-white text-decoration-line">Nosotros</a>
+                        <a href="pages/nosotros.html" class="text-white text-decoration-line">Nosotros</a>
                     </div>
                     <div class="mb-2">
-                        <a href="entradas.html" class="text-white text-decoration-line">Entradas</a>
+                        <a href="pages/entradas.html" class="text-white text-decoration-line">Entradas</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div
+                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
                     <p class="fs-5 fw-bolder">Contacto</p>
                     <div class="mb-2">
                         +54 1121835859
@@ -167,8 +186,8 @@
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
+    <!-- fin footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

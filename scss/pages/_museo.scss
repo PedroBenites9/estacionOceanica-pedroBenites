@@ -1,13 +1,23 @@
 /* museo */
 .img__museo {
-    width: 50%;
+    width: 47%;
 }
 
-.p__text-info {
-    text-align: center;
+.aside{
+    &__text-info{
+        text-align: center;
+        width: 30rem;
+    }
 }
-
 .article__text{
     text-align: center;
+}
+
+@media screen and (max-width:767px){ 
+    .img{
+        &__museo1, &__museo2{
+            width: 100%;
+        }
+    }
 }
 /* fin museo */

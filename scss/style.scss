@@ -1,6 +1,10 @@
+@import 'abstracts/variables';  //el archivo en la cual va a tener variables, siempre tiene que ir primero
 @import 'components/global';
 @import 'components/header';
 @import 'components/footer';
 @import 'pages/index';
 @import 'pages/museo';
-@import 'pages/od'; 
+@import 'pages/od';
+@import 'pages/rescate';
+@import 'pages/entradas';
+@import 'pages/nosotros'

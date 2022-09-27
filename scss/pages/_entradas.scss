@@ -1,0 +1,61 @@
+@mixin textCentrado($alineacion) {
+    text-align: $alineacion;
+}
+@mixin titulo ($alineacion, $color) {
+    text-align: $alineacion;
+    color: $color;
+}
+.section{
+    &__img-entradas{
+        width: 28rem;
+        padding: 1rem;
+        border-radius: 5%;
+        transition: .5s;
+    }
+    &__img-entradas:hover{
+        transform: scale(1.05);
+    }
+}
+.table{
+    &__cabecera{
+        border: 1px solid;
+        padding: .5rem ;
+        width: 15rem;
+        @include textCentrado(center);
+    }
+    &__body{
+        border: 1px solid;
+    }
+    &__cabecera-title{
+        width: 17rem;
+    }
+    &__item{
+        @include textCentrado(center);   
+        border: 1px solid;
+    }
+    &__edades-sub{
+        @include textCentrado(left);   
+        font-weight: bold;
+        border: 1px solid;
+    }
+}
+
+.p{
+    &__container-cond{
+        margin: 2rem 0 0;
+    }
+}
+
+@media screen and (max-width:767px){ 
+    .section{
+        &__img-entradas{
+            width: 80%;
+        }
+    }
+    .p{
+        &__text-info__center{
+        @include titulo(center, black );
+        width:  100%;
+        }
+    }
+}   

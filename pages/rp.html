@@ -6,36 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon">
-
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/stlye.css">
     <title>RP</title>
+
 </head>
 
 <body>
+    <!-- inicio Header -->
     <header>
-        <div class="">
+        <div>
+            <!-- inicio de header collapse para mobil -->
             <div class="collapse nav__bg" id="navbarHeader">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-md-7 py-4">
-                            <h4 class="text-white">Mas informacion</h4>
-                            <p class="text-white">Todavia con dudas? Segui a los siguientes links y asombrate de
+                            <h4 class="text-white text__header">Mas informacion</h4>
+                            <p class="text-white text__header">Todavia con dudas? Segui a los siguientes links y
+                                asombrate de
                                 nuestras
                                 propuestas que podemos ofrecerte a vos y a toda tu familia!</p>
                         </div>
-                        <div class="col-sm-4 offset-md-1 py-4">
+                        <div class="col-sm-4 offset-md-1 py-4 text__header">
                             <h4 class="text-white">Links</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="museo_del_mar.html" class="text-white">Museo del Mar</a></li>
-                                <li><a href="submarino.html" class="text-white">Odisea Submarina</a></li>
-                                <li><a href="rp.html" class="text-white">Rescate Profundo</a></li>
-                                <li><a href="nosotros.html" class="text-white">Sobre Nosotros</a></li>
-                                <li><a href="entradas.html" class="text-white">Precios</a></li>
+                            <ul class="list-unstyled ">
+                                <li class="ul__li"><a href="museo_del_mar.html" class="text-white ul__li-text">Museo del
+                                        Mar</a></li>
+                                <li class="ul__li"><a href="submarino.html" class="text-white ul__li-text">Odisea
+                                        Submarina</a>
+                                </li>
+                                <li class="ul__li"><a href="rp.html" class="text-white ul__li-text">Rescate
+                                        Profundo</a></li>
+                                <li class="ul__li"><a href="nosotros.html" class="text-white ul__li-text">Sobre
+                                        Nosotros</a></li>
+                                <li class="ul__li"><a href="entradas.html" class="text-white ul__li-text">Precios</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- fin header collapse para mobil -->
+            <!-- inicio de header para desktop  -->
             <div class="navbar navbar-dark nav__bg shadow-sm">
                 <div class="container ">
                     <a href="../index.html">
@@ -51,7 +63,8 @@
                     <div class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
                         <ul class="nav justify-content-right">
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="submarino.html">Odisea Submarina</a>
+                                <a class="nav-link " aria-current="page" href="submarino.html">Odisea
+                                    Submarina</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="rp.html">Rescate Profundo</a>
@@ -69,15 +82,17 @@
                     </div>
                 </div>
             </div>
+            <!-- fin de header para desktop  -->
         </div>
     </header>
+    <!-- fin Header -->
     <h1 class="h1__title">
         Rescate Profundo
     </h1>
-    <section class="section__content-rp">
-        <article class="article__content-grid">
+    <section class="container">
+        <article class="">
 
-            <p class="p__text-rp p__text-rp1"> Veni a Rescate Profundo, vas a experimentar un buceo por las
+            <p class="h1__title"> Veni a Rescate Profundo, vas a experimentar un buceo por las
                 profundidades del
                 oceano, en donde vos sos el protagonista de esta secuencia. Harás un analisis de lo que sucede en tus
                 alrededores, y vas a tener que estar atento en cada momento lo que sucede ya que vas a extraer un
@@ -85,14 +100,17 @@
                 porque hay un animal marino que esta vigilandote desde lo oscuro del oceano, es ahí en donde empieza el
                 verdadero rescate profundo.
             </p>
-            <iframe class="iframe__video-rp iframe__video-rp1" width="560" height="315"
-                src="https://www.youtube.com/embed/FuUmhkqmaz0" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+            <div class="d-flex flex-row justify-content-center gap-5 mb-4 flex-wrap">
+                <iframe class="iframe__video-rp iframe__video-rp1" width="560" height="315"
+                    src="https://www.youtube.com/embed/FuUmhkqmaz0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
 
-            <img class='img__muchacho' src="../assets/img/rp/xd.jpg" alt="img_rp">
-            <p class="p__text-rp p__text-rp2">
+                <img class='article__img-boy' src="../assets/img/rp/xd.jpg" alt="img_rp">
+
+            </div>
+            <p class="article__text-rp">
                 Rescate profundo es un espacio para que cada persona pueda experimentar la tecnologia "Virtual
                 Reality" una simulacion experimental que puede asemejar al mundo real. Estas aplicaciones estan
                 programadas para que aquel que tenga puesto el visor de VR pueda observar un ambiente completamente
@@ -101,13 +119,15 @@
             </p>
         </article>
     </section>
+    <!-- inicio footer -->
     <footer>
         <div class="container-fluid footer">
-            <div class="row p-5">
+            <div class="row p-5 footer__content">
                 <div class="col-xs-12 col-md-6 col-lg-3 img__footer ">
                     <img class="" src="../assets/img/index/logo.PNG" alt="logo__footer">
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div
+                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
                     <p class="fs-5 fw-bolder">Redes Sociales</p>
                     <div class="mb-2">
                         <a class="text-white text-decoration-line" href="https://www.facebook.com/estacionoceanica">
@@ -121,25 +141,27 @@
                         <a href="#" class="text-secondary text-decoration-none"></a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div
+                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
                     <p class="fs-5 fw-bolder">links</p>
                     <div class="mb-2">
-                        <a href="museo_del_mar.html" class="text-white text-decoration-line">Museo del Mar</a>
+                        <a href="pages/museo_del_mar.html" class="text-white text-decoration-line">Museo del Mar</a>
                     </div>
                     <div class="mb-2">
-                        <a href="submarino.html" class="text-white text-decoration-line">Odisea Submarina</a>
+                        <a href="pages/submarino.html" class="text-white text-decoration-line">Odisea Submarina</a>
                     </div>
                     <div class="mb-2">
-                        <a href="rp.html" class="text-white text-decoration-line">Rescate Profundo</a>
+                        <a href="pages/rp.html" class="text-white text-decoration-line">Rescate Profundo</a>
                     </div>
                     <div class="mb-2">
-                        <a href="nosotros.html" class="text-white text-decoration-line">Nosotros</a>
+                        <a href="pages/nosotros.html" class="text-white text-decoration-line">Nosotros</a>
                     </div>
                     <div class="mb-2">
-                        <a href="entradas.html" class="text-white text-decoration-line">Entradas</a>
+                        <a href="pages/entradas.html" class="text-white text-decoration-line">Entradas</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div
+                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
                     <p class="fs-5 fw-bolder">Contacto</p>
                     <div class="mb-2">
                         +54 1121835859
@@ -153,8 +175,9 @@
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
+    <!-- fin footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

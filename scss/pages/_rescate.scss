@@ -1,0 +1,18 @@
+
+.article{
+    &__img-boy{
+        width: 31.5rem;
+    }
+    &__text-rp{
+        text-align: center;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (max-width:767px){ 
+   .article{
+        &__img-boy{
+            width: 100%;
+        }
+   } 
+}

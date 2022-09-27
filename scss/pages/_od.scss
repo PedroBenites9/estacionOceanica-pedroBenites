@@ -1,3 +1,49 @@
 .img__carousel{
     height: 25rem;
 }
+
+.content{
+    &-od{
+        gap: 3rem;
+    }
+}
+.p{
+    &-od{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:767px){ 
+    .iframe{
+        &__video{
+            width: auto;
+            height: 20rem;
+        }
+    }
+    .content{
+        &-od{
+            flex-direction: column;
+        }
+    }
+    .img{
+        &__carousel{
+            width: 100%;
+
+        }
+    }
+    .p{
+        &__od{
+            text-align: center;
+        }
+    }
+    .carousel{
+        &-inner{
+            height: 240px;
+        }
+    }
+    .content{
+        &-od{
+            gap: 1rem;
+        }
+    }
+}

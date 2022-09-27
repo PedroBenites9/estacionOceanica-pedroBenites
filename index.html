@@ -15,30 +15,42 @@
 </head>
 
 <body>
+    <!-- inicio Header -->
     <header>
-        <div class="">
+        <div>
+            <!-- inicio de header collapse para mobil -->
             <div class="collapse nav__bg" id="navbarHeader">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-md-7 py-4">
-                            <h4 class="text-white">Mas informacion</h4>
-                            <p class="text-white">Todavia con dudas? Segui a los siguientes links y asombrate de
+                            <h4 class="text-white text__header">Mas informacion</h4>
+                            <p class="text-white text__header">Todavia con dudas? Segui a los siguientes links y
+                                asombrate de
                                 nuestras
                                 propuestas que podemos ofrecerte a vos y a toda tu familia!</p>
                         </div>
-                        <div class="col-sm-4 offset-md-1 py-4">
+                        <div class="col-sm-4 offset-md-1 py-4 text__header">
                             <h4 class="text-white">Links</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="museo_del_mar.html" class="text-white">Museo del Mar</a></li>
-                                <li><a href="submarino.html" class="text-white">Odisea Submarina</a></li>
-                                <li><a href="rp.html" class="text-white">Rescate Profundo</a></li>
-                                <li><a href="nosotros.html" class="text-white">Sobre Nosotros</a></li>
-                                <li><a href="entradas.html" class="text-white">Precios</a></li>
+                            <ul class="list-unstyled ">
+                                <li class="ul__li"><a href=" pages/museo_del_mar.html"
+                                        class="text-white ul__li-text">Museo del
+                                        Mar</a></li>
+                                <li class="ul__li"><a href="pages/submarino.html" class="text-white ul__li-text">Odisea
+                                        Submarina</a>
+                                </li>
+                                <li class="ul__li"><a href="pages/rp.html" class="text-white ul__li-text">Rescate
+                                        Profundo</a></li>
+                                <li class="ul__li"><a href="pages/nosotros.html" class="text-white ul__li-text">Sobre
+                                        Nosotros</a></li>
+                                <li class="ul__li"><a href="pages/entradas.html"
+                                        class="text-white ul__li-text">Precios</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- fin header collapse para mobil -->
+            <!-- inicio de header para desktop  -->
             <div class="navbar navbar-dark nav__bg shadow-sm">
                 <div class="container ">
                     <a href="../index.html">
@@ -73,12 +85,16 @@
                     </div>
                 </div>
             </div>
+            <!-- fin de header para desktop  -->
         </div>
     </header>
+    <!-- fin Header -->
+    <!-- inicio main -->
     <main class="img__fondo-fijo">
+        <!-- seccion bienvenida -->
         <section class="py-5 text-center container">
-            <div class="row py-lg-5">
-                <div class="col-lg-6 col-md-8 mx-auto">
+            <div class=" row py-lg-5 ">
+                <div class="col-lg-6 col-md-8 mx-auto div__content-eo">
                     <h1 class="fw-bold h1__color-white">Estacion Oceanica</h1>
                     <p class="lead p__color-white p__text-c">Es un centro educativo de interpretación, experiencia y
                         recreación que aborda los diferentes ecosistemas marinos, haciendo una profundización en la
@@ -86,16 +102,18 @@
                 </div>
             </div>
         </section>
+        <!-- fin seccion bienvenida -->
+        <!-- inicio de seccion cartas -->
         <div class="album py-5 bg-transparent">
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <!-- tenemos 3 tarjetas -->
+                    <!-- 3 cads -->
                     <div class="col">
                         <div data-aos="slide-up" class="card shadow-sm">
                             <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
                                 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
                                 preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <img class="img__tarjetas" src="assets/img/museo/cameroceras.jpg" alt="">
+                                <img class="img__tarjetas" src="assets/img/index/cameroceras.jpg" alt="">
                             </svg>
                             <div class="card-body">
                                 <p class="card-text">En esta sala se presenta un recorrido por las eras geológicas que
@@ -103,7 +121,9 @@
                                     interrelaciones y roles biológicos</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver mas</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            href="pages/museo_del_mar.html"
+                                            onclick="location.href='pages/museo_del_mar.html'">Ver mas</button>
                                     </div>
                                 </div>
                             </div>
@@ -116,14 +136,16 @@
                                 preserveAspectRatio="xMidYMid slice" focusable="false">
                                 <img class="img__tarjetas" src="assets/img/index/hall.jpg" alt="">
                             </svg>
-                            <div class="card-body ">
-                                <p class="card-text">Estación Oceánica es un espacio para toda la
-                                    familia donde se materializan las eras geológicas de
-                                    la evolución marina, con especies de gran realismo representadas en sus ambientes
-                                    naturales.</p>
+                            <div class="card-body">
+                                <p class="card-text">Estacion Oceanica, un lugar para aprender con toda la familia
+                                    acerca de los mares.
+                                    Junto con un equipo de jovenes entuciasta
+                                    sobre el cuidado de mares te invitamos a que sepas sobre nosotros.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver mas</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            onclick="location.href='pages/nosotros.html'">Ver mas</button>
                                     </div>
                                 </div>
                             </div>
@@ -143,19 +165,21 @@
                                     visitantes vivir una experiencia inmersiva</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver mas</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            onclick="location.href='pages/submarino.html'">Ver
+                                            mas</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- 3 cards -->
+                    <!-- 3 cads -->
                     <div class="col">
-                        <div data-aos="flip-right" class="card shadow-sm">
+                        <div data-aos="slide-up" class="card shadow-sm">
                             <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
                                 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
                                 preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <img class="img__tarjetas" src="assets/img/museo/cameroceras.jpg" alt="">
+                                <img class="img__tarjetas" src="assets/img/index/cameroceras.jpg" alt="">
                             </svg>
                             <div class="card-body">
                                 <p class="card-text">En esta sala se presenta un recorrido por las eras geológicas que
@@ -163,34 +187,38 @@
                                     interrelaciones y roles biológicos</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver mas</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            href="pages/museo_del_mar.html"
+                                            onclick="location.href='pages/museo_del_mar.html'">Ver mas</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div data-aos="flip-down" class="card shadow-sm">
+                        <div data-aos="slide-up" class="card shadow-sm">
                             <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
                                 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
                                 preserveAspectRatio="xMidYMid slice" focusable="false">
                                 <img class="img__tarjetas" src="assets/img/index/hall.jpg" alt="">
                             </svg>
-                            <div class="card-body ">
-                                <p class="card-text">Estación Oceánica es un espacio para toda la
-                                    familia donde se materializan las eras geológicas de
-                                    la evolución marina, con especies de gran realismo representadas en sus ambientes
-                                    naturales.</p>
+                            <div class="card-body">
+                                <p class="card-text">Estacion Oceanica, un lugar para aprender con toda la familia
+                                    acerca de los mares.
+                                    Junto con un equipo de jovenes entuciasta
+                                    sobre el cuidado de mares te invitamos a que sepas sobre nosotros.
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver mas</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            onclick="location.href='pages/nosotros.html'">Ver mas</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div data-aos="flip-left" class="card shadow-sm">
+                        <div data-aos="slide-up" class="card shadow-sm">
                             <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
                                 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
                                 preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -203,24 +231,28 @@
                                     visitantes vivir una experiencia inmersiva</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver mas</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            onclick="location.href='pages/submarino.html'">Ver
+                                            mas</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </main>
+    <!-- fin main -->
+    <!-- inicio footer -->
     <footer>
         <div class="container-fluid footer">
-            <div class="row p-5">
+            <div class="row p-5 footer__content">
                 <div class="col-xs-12 col-md-6 col-lg-3 img__footer ">
                     <img class="" src="../assets/img/index/logo.PNG" alt="logo__footer">
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div
+                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
                     <p class="fs-5 fw-bolder">Redes Sociales</p>
                     <div class="mb-2">
                         <a class="text-white text-decoration-line" href="https://www.facebook.com/estacionoceanica">
@@ -234,25 +266,27 @@
                         <a href="#" class="text-secondary text-decoration-none"></a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div
+                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
                     <p class="fs-5 fw-bolder">links</p>
                     <div class="mb-2">
-                        <a href="museo_del_mar.html" class="text-white text-decoration-line">Museo del Mar</a>
+                        <a href="pages/museo_del_mar.html" class="text-white text-decoration-line">Museo del Mar</a>
                     </div>
                     <div class="mb-2">
-                        <a href="submarino.html" class="text-white text-decoration-line">Odisea Submarina</a>
+                        <a href="pages/submarino.html" class="text-white text-decoration-line">Odisea Submarina</a>
                     </div>
                     <div class="mb-2">
-                        <a href="rp.html" class="text-white text-decoration-line">Rescate Profundo</a>
+                        <a href="pages/rp.html" class="text-white text-decoration-line">Rescate Profundo</a>
                     </div>
                     <div class="mb-2">
-                        <a href="nosotros.html" class="text-white text-decoration-line">Nosotros</a>
+                        <a href="pages/nosotros.html" class="text-white text-decoration-line">Nosotros</a>
                     </div>
                     <div class="mb-2">
-                        <a href="entradas.html" class="text-white text-decoration-line">Entradas</a>
+                        <a href="pages/entradas.html" class="text-white text-decoration-line">Entradas</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div
+                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
                     <p class="fs-5 fw-bolder">Contacto</p>
                     <div class="mb-2">
                         +54 1121835859
@@ -266,9 +300,8 @@
                     </div>
                 </div>
             </div>
-
     </footer>
-    </div>
+    <!-- fin footer -->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

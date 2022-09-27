@@ -2,11 +2,33 @@
 
 .img__tarjetas {
     position: absolute;
-    width: 100%;
-    height: 60%;
+    width:90%;
+    height: 50%;
     border-radius: .4rem;
+    align-items: center;
 }
 
-.card-body {
-    text-align: justify;
+.card {
+    border: 1px solid  dark;
+    padding: 1rem;
+    &-body{
+        text-align: justify;
+    }
 }
+
+.img__fondo-fijo {
+    background-image: url(../assets/img/index/fondoMuseo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+@media screen and (max-width:767px){ 
+    .img{
+        &__fondo-fijo{
+            background-attachment: fixed;
+        }
+    }
+}   
