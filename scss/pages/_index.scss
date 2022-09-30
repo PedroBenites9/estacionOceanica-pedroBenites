@@ -21,25 +21,25 @@ $breakpoints:(
 /* index */
 .section{
     &__content{
-        margin: 18% 0;
+        margin: 10% 0;
     }
 }
 .p{
     &__text-i{
-        font-size: x-large;
-
+        font-size: larger;
         @include media-up(sm){
-            font-size: larger;
+            font-size: x-large;
+        }
+        @include media-up(md){
+            font-size: x-large;
         }
     }
 }
 
 .h1{
     &__text-i{
-        @include media-up(sm){
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
+        font-size: 3rem;    
+        margin-bottom: 1rem;
         @include media-up(md){
             font-size: 3.5rem;
         }     
@@ -74,23 +74,4 @@ $breakpoints:(
     background-size: cover;
     background-position: center;
 
-}
-
-
-//mobile
-@media screen and (max-width:767px){ 
-    .p{
-        &__text-i{
-            
-        }
-    }
-    
-    
-    
-}   
-
-//tablet
-@media screen and (min-width:767px) and (max-width:1023px){
-        
-        
 }

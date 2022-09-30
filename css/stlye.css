@@ -113,27 +113,27 @@ div > p > a {
 /*Mixing*/
 /* index */
 .section__content {
-  margin: 18% 0; }
+  margin: 10% 0; }
 
 .p__text-i {
-  font-size: x-large; }
+  font-size: larger; }
   @media screen and (min-width: 540px) {
     .p__text-i {
-      font-size: larger; } }
+      font-size: x-large; } }
+  @media screen and (min-width: 768px) {
+    .p__text-i {
+      font-size: x-large; } }
 
-@media screen and (min-width: 540px) {
-  .h1__text-i {
-    font-size: 3rem;
-    margin-bottom: 1rem; } }
-
-@media screen and (min-width: 768px) {
-  .h1__text-i {
-    font-size: 3.5rem; } }
-
-@media screen and (min-width: 1024px) {
-  .h1__text-i {
-    font-size: 4rem;
-    margin-bottom: 3rem; } }
+.h1__text-i {
+  font-size: 3rem;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 768px) {
+    .h1__text-i {
+      font-size: 3.5rem; } }
+  @media screen and (min-width: 1024px) {
+    .h1__text-i {
+      font-size: 4rem;
+      margin-bottom: 3rem; } }
 
 .img__tarjetas {
   width: 100%;
