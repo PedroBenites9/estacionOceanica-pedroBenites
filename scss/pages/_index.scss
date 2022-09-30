@@ -1,17 +1,68 @@
+/*map*/
+
+$breakpoints:(
+    sm: 540px,
+    md: 768px,
+    lg: 1024px
+);
+
+/*Mixing*/
+@mixin media-up($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+@mixin media-down($breakpoint){
+    @media screen and (max-width : map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
 /* index */
+.section{
+    &__content{
+        margin: 18% 0;
+    }
+}
+.p{
+    &__text-i{
+        font-size: x-large;
+
+        @include media-up(sm){
+            font-size: larger;
+        }
+    }
+}
+
+.h1{
+    &__text-i{
+        @include media-up(sm){
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        @include media-up(md){
+            font-size: 3.5rem;
+        }     
+        @include media-up(lg){
+            font-size: 4rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
 
 .img__tarjetas {
-    position: absolute;
-    width:90%;
-    height: 50%;
+    width:100%;
+    height: 100%;
     border-radius: .4rem;
-    align-items: center;
+    padding: 1rem 1rem 0 1rem;
 }
 
 .card {
-    border: 1px solid  dark;
-    padding: 1rem;
-    &-body{
+    align-items: center;
+    height: auto;
+    &-text{
+        font-size: auto;
         text-align: justify;
     }
 }
@@ -25,10 +76,21 @@
 
 }
 
+
+//mobile
 @media screen and (max-width:767px){ 
-    .img{
-        &__fondo-fijo{
-            background-attachment: fixed;
+    .p{
+        &__text-i{
+            
         }
     }
+    
+    
+    
 }   
+
+//tablet
+@media screen and (min-width:767px) and (max-width:1023px){
+        
+        
+}
