@@ -166,17 +166,38 @@ div > p > a {
   gap: 0.5rem;
   justify-items: center;
   align-items: center; }
+  @media screen and (max-width: 540px) {
+    .aside__container {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center; } }
+  @media screen and (max-width: 768px) {
+    .aside__container {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center; } }
+  @media screen and (max-width: 1024px) {
+    .aside__container {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center; } }
 
 .aside__text-info {
   text-align: center;
-  width: 70%; }
+  width: 100%; }
 
 .img__museo {
   width: 70%;
   height: auto; }
+  @media screen and (max-width: 540px) {
+    .img__museo {
+      width: 100%; } }
 
 .sect__content, .sect__aside-containter {
-  margin-top: 5rem; }
+  margin: 2rem 0; }
 
 .article__text {
   text-align: center; }

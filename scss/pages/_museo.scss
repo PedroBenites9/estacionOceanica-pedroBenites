@@ -36,22 +36,36 @@ $breakpoints:(
 .aside{
     &__container{
         margin: 1rem;
-        @include prop-grid(repeat(2, 50%), repeat(2, 50%), .5rem, center, center)
+        @include prop-grid(repeat(2, 50%), repeat(2, 50%), .5rem, center, center);
+        @include media-down(sm){
+            @include prop-flex(column, wrap, center, center);
+        }
+        @include media-down(md){
+            @include prop-flex(column, wrap, center, center);
+        }
+        @include media-down(lg){
+            @include prop-flex(column, wrap, center, center);
+        }
     }
     &__text-info{
         text-align: center;
-        width: 70%;
+        width: 100%;
     }
 }
 
-.img__museo {
-    width: 70%;
-    height: auto;
+.img{
+    &__museo{
+        width: 70%;
+        height: auto;
+        @include media-down(sm){
+            width: 100%;
+        }
+    }
 }
 
 .sect{
     &__content, &__aside-containter{
-        margin-top: 5rem;
+        margin: 2rem 0;
     }
 }
 .article__text{
