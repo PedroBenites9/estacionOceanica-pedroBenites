@@ -1,23 +1,60 @@
-/* museo */
-.img__museo {
-    width: 47%;
+/*mapa*/
+
+$breakpoints:(
+    sm: 540px,
+    md: 768px,
+    lg: 1024px
+);
+
+/*mixin*/
+@mixin prop-flex ( $direction, $warp, $just, $align){
+    display: flex;
+    flex-flow: $direction $warp;
+    justify-content: $just;
+    align-items: $align;
+}
+@mixin prop-grid ( $grid-temp-row, $grid-temp-column, $gap, $just, $align){
+    display: grid;
+    grid-template-columns: $grid-temp-column;
+    grid-template-rows: $grid-temp-row;
+    gap: $gap;
+    justify-items: $just;
+    align-items: $align;
+}
+@mixin media-up($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+@mixin media-down($breakpoint){
+    @media screen and (max-width : map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
 }
 
+/* museo */
 .aside{
+    &__container{
+        margin: 1rem;
+        @include prop-grid(repeat(2, 50%), repeat(2, 50%), .5rem, center, center)
+    }
     &__text-info{
         text-align: center;
-        width: 30rem;
+        width: 70%;
+    }
+}
+
+.img__museo {
+    width: 70%;
+    height: auto;
+}
+
+.sect{
+    &__content, &__aside-containter{
+        margin-top: 5rem;
     }
 }
 .article__text{
     text-align: center;
-}
-
-@media screen and (max-width:767px){ 
-    .img{
-        &__museo1, &__museo2{
-            width: 100%;
-        }
-    }
 }
 /* fin museo */

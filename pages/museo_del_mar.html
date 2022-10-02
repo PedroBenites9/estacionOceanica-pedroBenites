@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/stlye.css">
     <title>Museo</title>
 </head>
@@ -85,51 +86,68 @@
         </div>
     </header>
     <!-- fin Header -->
-    <h1 class="h1__title">
-        Museo del Mar
-    </h1>
-    <div class="container">
+    <div data-aos="slide-down">
+        <h1 class="h1__title">
+            Museo del Mar
+        </h1>
+    </div>
+    <main class="container">
         <section class="sect__content">
-            <article class="p__text-info">
-                En esta sala se presenta un recorrido por las eras geológicas que marcaron la evolución en el océano,
-                las
-                distintas especies que lo habitaron, sus interrelaciones y roles biológicos. También encontrarás algunas
-                de
-                las criaturas más representativas de cada familia de animales que recorrieron los mares y empezaron a
-                transitar por la tierra hace millones de años. Nuestra idea es compartir con vos una experiencia que te
-                ayude a comprender la complejidad que tiene este gigante macro sistema para que al llegar a la última
-                parte
-                del recorrido, puedas entender las problemáticas que hoy impactan en los océanos, algunas de las
-                posibles
-                soluciones y los proyectos de conservación que hoy estan ayudando a reducir, mitigar o sanear estos
-                impactos.
-            </article>
-            <aside class="d-flex flex-row flex-wrap justify-content-between align-items-center gap-3 m-3">
+            <div data-aos="slide-up">
+                <article class="p__text-info">
+                    En esta sala se presenta un recorrido por las eras geológicas que marcaron la evolución en el
+                    océano,
+                    las
+                    distintas especies que lo habitaron, sus interrelaciones y roles biológicos. También encontrarás
+                    algunas
+                    de
+                    las criaturas más representativas de cada familia de animales que recorrieron los mares y empezaron
+                    a
+                    transitar por la tierra hace millones de años. Nuestra idea es compartir con vos una experiencia que
+                    te
+                    ayude a comprender la complejidad que tiene este gigante macro sistema para que al llegar a la
+                    última
+                    parte
+                    del recorrido, puedas entender las problemáticas que hoy impactan en los océanos, algunas de las
+                    posibles
+                    soluciones y los proyectos de conservación que hoy estan ayudando a reducir, mitigar o sanear estos
+                    impactos.
+                </article>
+            </div>
+            <aside class="aside__container">
+                <div data-aos="slide-right" class="aside__text-info">
+                    <p> Dentro del recorrido del museo del mar
+                        vamos viajar atraves del
+                        tiempo
+                        y aprenderemos acerca de los inicios de la vida en la tierra en el periodo cambrico. Dentro de
+                        la
+                        misma
+                        observaremos a los seres vivos que habitaron en la tierra,
+                        como eran su manera de convivir entre especies y la evolucion del mismo. Aprenderemos de la
+                        extinciones
+                        que sucedieron, los depredadores topes, los puntos claves y quienes fueron los animales que
+                        sobrevivieron dentro de cada periodo
+                        geologica.
 
-                <p class="p__text-info__center"> Dentro del recorrido del museo del mar vamos viajar atraves del
-                    tiempo
-                    y aprenderemos acerca de los inicios de la vida en la tierra en el periodo cambrico. Dentro de la
-                    misma
-                    observaremos a los seres vivos que habitaron en la tierra,
-                    como eran su manera de convivir entre especies y la evolucion del mismo. Aprenderemos de la
-                    extinciones
-                    que sucedieron, los depredadores topes, los puntos claves y quienes fueron los animales que
-                    sobrevivieron dentro de cada periodo
-                    geologica.
-
-                </p>
-                <img class="img__museo img__museo1" src=" ../assets/img/museo/cameroceras.jpg" alt="img_Museo1">
-                <img class="img__museo img__museo2" src="../assets/img/museo/museo-del-mar.jpg" alt="img_Museo2">
-                <p class="p__text-info__center"> Cada maqueta de estas especies es la representacion exacta de cada
-                    especie a escala tamaño real. Nuestros excelenticimos guias nos relataran cada acontencimiento en
-                    los
-                    diferentes periodos, y nos detallaran como las especies convivieron entre ellos.
-                </p>
-
-
+                    </p>
+                </div>
+                <div data-aos="slide-left" class="d-flex justify-content-center">
+                    <img class="img__museo" src=" ../assets/img/museo/cameroceras.jpg" alt="img_Museo1">
+                </div>
+                <div data-aos="slide-right" class="d-flex justify-content-center">
+                    <img class="img__museo" src="../assets/img/museo/museo-del-mar.jpg" alt="img_Museo2">
+                </div>
+                <div data-aos="slide-left" class="aside__text-info">
+                    <p> Cada maqueta de estas especies es la representacion exacta de cada
+                        especie a escala tamaño real. Nuestros excelenticimos guias nos relataran cada acontencimiento
+                        en
+                        los
+                        diferentes periodos, y nos detallaran como las especies convivieron entre ellos.
+                    </p>
+                </div>
             </aside>
         </section>
-    </div>
+    </main>
     <!-- inicio footer -->
     <footer>
         <div class="container-fluid footer">
@@ -189,6 +207,14 @@
     </footer>
     <!-- fin footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        //AOS.init();// inicialización básica
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1500
+        });
+    </script>
 </body>
 
 </html>

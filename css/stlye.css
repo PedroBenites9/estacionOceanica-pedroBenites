@@ -155,45 +155,95 @@ div > p > a {
   background-size: cover;
   background-position: center; }
 
+/*mapa*/
+/*mixin*/
 /* museo */
-.img__museo {
-  width: 47%; }
+.aside__container {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  gap: 0.5rem;
+  justify-items: center;
+  align-items: center; }
 
 .aside__text-info {
   text-align: center;
-  width: 30rem; }
+  width: 70%; }
+
+.img__museo {
+  width: 70%;
+  height: auto; }
+
+.sect__content, .sect__aside-containter {
+  margin-top: 5rem; }
 
 .article__text {
   text-align: center; }
 
-@media screen and (max-width: 767px) {
-  .img__museo1, .img__museo2 {
-    width: 100%; } }
-
 /* fin museo */
-.img__carousel {
-  height: 25rem; }
+/*Mixin*/
+.article__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 2rem 0 2rem 0; }
+  @media screen and (max-width: 540px) {
+    .article__container {
+      display: flex;
+      flex-flow: column wrap;
+      justify-items: center;
+      align-items: center;
+      gap: 3rem; } }
+  @media screen and (max-width: 768px) {
+    .article__container {
+      display: flex;
+      flex-flow: column wrap;
+      justify-items: center;
+      align-items: center;
+      gap: 2rem; } }
+  @media screen and (max-width: 1024px) {
+    .article__container {
+      display: flex;
+      flex-flow: column wrap;
+      justify-items: center;
+      align-items: center;
+      gap: 4rem; }
+      .article__container iframe {
+        width: auto; } }
 
-.content-od {
-  gap: 3rem; }
+@media screen and (max-width: 540px) {
+  .article__container-2 {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0 2rem 0; } }
 
-.p-od {
-  text-align: center; }
+@media screen and (max-width: 768px) {
+  .article__container-2 {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0 2rem 0; } }
 
-@media screen and (max-width: 767px) {
-  .iframe__video {
-    width: auto;
-    height: 20rem; }
-  .content-od {
-    flex-direction: column; }
-  .img__carousel {
-    width: 100%; }
-  .p__od {
-    text-align: center; }
-  .carousel-inner {
-    height: 240px; }
-  .content-od {
-    gap: 1rem; } }
+@media screen and (max-width: 1024px) {
+  .article__container-2 {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-items: center;
+    align-items: center;
+    gap: 4rem; } }
+
+.p__od {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto; }
 
 .article__img-boy {
   width: 31.5rem; }

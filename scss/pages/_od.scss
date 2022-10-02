@@ -1,49 +1,73 @@
-.img__carousel{
-    height: 25rem;
-}
+$breakpoints:(
+    sm: 540px,
+    md: 768px,
+    lg: 1024px
+);
 
-.content{
-    &-od{
-        gap: 3rem;
+/*Mixin*/
+
+@mixin prop-flex ( $direction, $warp, $just, $align, $gap){
+    display: flex;
+    flex-flow: $direction $warp;
+    justify-items: $just;
+    align-items: $align;
+    gap: $gap;
+}
+@mixin prop-grid ( $grid-temp-row, $grid-temp-column, $gap, $just, $align){
+    display: grid;
+    grid-template-columns: $grid-temp-column;
+    grid-template-rows: $grid-temp-row;
+    gap: $gap;
+    justify-items: $just;
+    align-items: $align;
+}
+@mixin media-up($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
     }
 }
+@mixin media-down($breakpoint){
+    @media screen and (max-width : map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+.article{
+    &__container{
+        @include prop-flex( row, wrap ,center ,center, 5rem);
+        @include media-down(sm){
+            @include prop-flex( column, wrap ,center ,center, 3rem);
+        }
+        @include media-down(md){
+            @include prop-flex( column, wrap ,center ,center, 2rem);
+        }
+        @include media-down(lg){
+            @include prop-flex( column, wrap ,center ,center, 4rem);
+            iframe{
+                width: auto;
+            }
+        }
+        margin:2rem 0 2rem 0;
+    }
+    &__container-2{
+        @include media-down(sm){
+            @include prop-flex( column-reverse, wrap ,center ,center, 2rem);
+            margin:2rem 0 2rem 0;
+        }
+        @include media-down(md){
+            @include prop-flex( column-reverse, wrap ,center ,center, 2rem);
+            margin:2rem 0 2rem 0;
+        }
+        @include media-down(lg){
+            @include prop-flex( column-reverse, wrap ,center ,center, 4rem);
+        }
+    }
+}
+
 .p{
-    &-od{
+    &__od{
+        width: 80%;
         text-align: center;
-    }
-}
-
-@media screen and (max-width:767px){ 
-    .iframe{
-        &__video{
-            width: auto;
-            height: 20rem;
-        }
-    }
-    .content{
-        &-od{
-            flex-direction: column;
-        }
-    }
-    .img{
-        &__carousel{
-            width: 100%;
-
-        }
-    }
-    .p{
-        &__od{
-            text-align: center;
-        }
-    }
-    .carousel{
-        &-inner{
-            height: 240px;
-        }
-    }
-    .content{
-        &-od{
-            gap: 1rem;
-        }
+        margin: 0 auto;
     }
 }

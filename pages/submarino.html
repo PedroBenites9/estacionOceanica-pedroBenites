@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/stlye.css">
 
     <title>Odisea Submarina</title>
@@ -87,94 +87,109 @@
         </div>
     </header>
     <!-- fin Header -->
-    <main>
-        <div class="container">
+    <main class="container ">
+        <div data-aos="slide-down">
             <h1 class="h1__title">Odisea Submarina</h1>
-            <section class="d-flex flex-column justify-content-center align-items-center gap-3 ">
-                <article class="article__content">
-                    <p class="p__text-info">Un fascinante viaje de exploración para descubrir la maravillosa e inmensa
-                        biodiversidad de
-                        nuestro
-                        Mar Argentino. Una aventura en la que descubriremos los secretos más asombrosos del Océano
-                        Atlántico
-                        Sur. Este simulador permitirá a los visitantes vivir una experiencia multisensorial
-                        completamente
-                        inmersiva.
-                    </p>
-                </article>
-
-                <iframe class="iframe__video" width="456" height="511" src="https://www.youtube.com/embed/C2c-qF7a1lM"
-                    title="Odisea Submarina" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="container pb-3 ">
-                    <div class="d-flex content-od">
-                        <!-- inicio carousel -->
-                        <div class="col">
-                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active img__carousel">
-                                        <img src="../assets/img/od/estacion-hall.jpg"
-                                            class="d-block w-100 img__carousel-img" alt="img1">
-                                    </div>
-                                    <div class="carousel-item img__carousel">
-                                        <img src="../assets/img/od/estacion-pantallas.jpg" class="d-block w-100"
-                                            alt="img2">
-                                    </div>
-                                    <div class="carousel-item img__carousel">
-                                        <img src="../assets/img/od/gente-trans.jpg" class="d-block w-100" alt="img3">
-                                    </div>
-                                    <div class="carousel-item img__carousel">
-                                        <img src="../assets/img/od/trans-t08.jpg" class="d-block w-100" alt="img5">
-                                    </div>
-                                    <div class="carousel-item img__carousel">
-                                        <img src="../assets/img/od/20220816_104805.jpg" class="d-block w-100"
-                                            alt="img6">
-                                    </div>
-                                    <div class="carousel-item img__carousel">
-                                        <img src="../assets/img/od/odisea-sub.jpg" class="d-block w-100" alt="img4">
-                                    </div>
-                                </div>
-
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+        </div>
+        <section>
+            <article data-aos="slide-up" class="article__content p__text-info">
+                <p>Un fascinante viaje de exploración para descubrir la maravillosa e inmensa
+                    biodiversidad de
+                    nuestro
+                    Mar Argentino. Una aventura en la que descubriremos los secretos más asombrosos del Océano
+                    Atlántico
+                    Sur. Este simulador permitirá a los visitantes vivir una experiencia multisensorial
+                    completamente
+                    inmersiva.
+                </p>
+            </article>
+        </section>
+        <section>
+            <article class=" article__container">
+                <!-- inicio carousel -->
+                <div data-aos="slide-right" class="col">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active img__carousel">
+                                <img src="../assets/img/od/estacion-hall.jpg" class="d-block w-100 img__carousel-img"
+                                    alt="img1">
+                            </div>
+                            <div class="carousel-item img__carousel">
+                                <img src="../assets/img/od/estacion-pantallas.jpg" class="d-block w-100" alt="img2">
+                            </div>
+                            <div class="carousel-item img__carousel">
+                                <img src="../assets/img/od/gente-trans.jpg" class="d-block w-100" alt="img3">
+                            </div>
+                            <div class="carousel-item img__carousel">
+                                <img src="../assets/img/od/trans-t08.jpg" class="d-block w-100" alt="img5">
+                            </div>
+                            <div class="carousel-item img__carousel">
+                                <img src="../assets/img/od/20220816_104805.jpg" class="d-block w-100" alt="img6">
+                            </div>
+                            <div class="carousel-item img__carousel">
+                                <img src="../assets/img/od/odisea-sub.jpg" class="d-block w-100" alt="img4">
                             </div>
                         </div>
-                        <div class="col d-flex justify-content-centera align-items-center">
-                            <p class=" p__od">
-                                Nuestro recorrido comienza con un breve video explicativo donde nos proyectara como
-                                sera
-                                nuestro
-                                emocionante recorrido. Luego nos trasladeremos dentro del "Transbordado T-08", una
-                                fantastica
-                                plataforma que nos llevara desde la estacion Ecoparque hasta el Golfo San Matias,
-                                durante
-                                este
-                                recorrido vamos a informarnos acerca de las problematicas de la actualidad como por
-                                ejemplo
-                                la
-                                sobre
-                                pesca de barcos extranjeros en zonas protegidas.
-                                Por ultimo nos adentraremos dentro del submarino "Explorador S-21" en la cual nos
-                                llevara al
-                                fondo
-                                del mar argentino y observaremos toda los animales y la fauna marina que hay en el
-                                mar
-                                argentino.
-                            </p>
-                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-            </section>
-        </div>
+                <!-- fin carousel -->
+                <div data-aos="slide-left" class="col ">
+                    <p class=" p__od">
+                        Nuestro recorrido comienza con un breve video explicativo donde nos proyectara como
+                        sera
+                        nuestro
+                        emocionante recorrido. Luego nos trasladeremos dentro del "Transbordado T-08", una
+                        fantastica
+                        plataforma que nos llevara desde la estacion Ecoparque hasta el Golfo San Matias,
+                        durante
+                        este
+                        recorrido vamos a informarnos acerca de las problematicas de la actualidad como por
+                        ejemplo
+                        la
+                        sobre
+                        pesca de barcos extranjeros en zonas protegidas.
+                        Por ultimo nos adentraremos dentro del submarino "Explorador S-21" en la cual nos
+                        llevara al
+                        fondo
+                        del mar argentino y observaremos toda los animales y la fauna marina que hay en el
+                        mar
+                        argentino.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="article__container article__container-2">
+                <div data-aos="slide-right" class="col">
+                    <p class="p__od">
+                        Nuestro enfoque es mostrarle al publico la biodiversidad que tiene el Mar Argentino,
+                        apuntando siempre el cuidado del mismo y que cada persona pueda llevarse consigo mismo una
+                        reflexion de lo que sucede hoy
+                        en dia en nuestros mares.
+
+                    </p>
+                </div>
+                <div data-aos="slide-left" class="col">
+                    <iframe class="iframe__video" width="596" height="451"
+                        src="https://www.youtube.com/embed/C2c-qF7a1lM?color=green" title="Odisea Submarina"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+
     </main>
     <!-- inicio footer -->
     <footer>
@@ -235,6 +250,14 @@
     </footer>
     <!-- fin footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        //AOS.init();// inicialización básica
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
 </body>
 
 </html>
