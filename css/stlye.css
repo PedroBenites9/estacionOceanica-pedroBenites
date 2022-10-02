@@ -204,7 +204,7 @@ div > p > a {
       justify-items: center;
       align-items: center;
       gap: 2rem; } }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1080px) {
     .article__container {
       display: flex;
       flex-flow: column wrap;
@@ -212,7 +212,10 @@ div > p > a {
       align-items: center;
       gap: 4rem; }
       .article__container iframe {
-        width: auto; } }
+        width: auto; }
+      .article__container .carousel {
+        width: 70%;
+        margin: 0 auto; } }
 
 @media screen and (max-width: 540px) {
   .article__container-2 {
@@ -232,7 +235,7 @@ div > p > a {
     gap: 2rem;
     margin: 2rem 0 2rem 0; } }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
   .article__container-2 {
     display: flex;
     flex-flow: column-reverse wrap;

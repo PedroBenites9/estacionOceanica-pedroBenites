@@ -1,7 +1,7 @@
 $breakpoints:(
     sm: 540px,
     md: 768px,
-    lg: 1024px
+    lg: 1080px
 );
 
 /*Mixin*/
@@ -37,6 +37,7 @@ $breakpoints:(
         @include prop-flex( row, wrap ,center ,center, 5rem);
         @include media-down(sm){
             @include prop-flex( column, wrap ,center ,center, 3rem);
+            
         }
         @include media-down(md){
             @include prop-flex( column, wrap ,center ,center, 2rem);
@@ -45,6 +46,10 @@ $breakpoints:(
             @include prop-flex( column, wrap ,center ,center, 4rem);
             iframe{
                 width: auto;
+            }
+            .carousel{
+                width: 70%;
+                margin: 0 auto;
             }
         }
         margin:2rem 0 2rem 0;
