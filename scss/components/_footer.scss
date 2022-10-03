@@ -1,15 +1,58 @@
+/*mapa*/
+
+$breakpoints:(
+    sm: 540px,
+    md: 768px,
+    lg: 1024px
+);
+
+/*mixin*/
+@mixin prop-flex ( $direction, $wrap, $just, $align){
+    display: flex;
+    flex-flow: $direction $wrap;
+    justify-content: $just;
+    align-items: $align;
+}
+@mixin prop-grid ( $grid-temp-row, $grid-temp-column, $gap, $just, $align){
+    display: grid;
+    grid-template-columns: $grid-temp-column;
+    grid-template-rows: $grid-temp-row;
+    gap: $gap;
+    justify-items: $just;
+    align-items: $align;
+}
+@mixin media-up($breakpoint){
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+@mixin media-down($breakpoint){
+    @media screen and (max-width : map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
 /* footer */
 
 .footer {
     background-color: map-get($palette, --bs-blue-dark );
     color: var(--bs-white);
-}
-
-.div__content-column {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    width: 30rem;
+    &__content{
+        padding: 2rem;
+        @include prop-flex( row, wrap, space-around, baseline );
+        @include media-down(lg){
+            @include prop-flex( row, wrap, space-between, baseline);
+            padding: 2rem;
+        }
+        @include media-down(md){
+            @include prop-flex( column, wrap, center, center );
+            padding: 2rem;
+        }
+        @include media-down(sm){
+            @include prop-flex( column, wrap, center, center );
+            padding: 2rem;
+        }
+    }
 }
 
 .div__redes {
@@ -26,10 +69,6 @@
 
 div>p>a {
     color: white;
-}
-
-.footer .img__footer{
-    text-align: center;
 }
 
 @media screen and (max-width:767px){ 

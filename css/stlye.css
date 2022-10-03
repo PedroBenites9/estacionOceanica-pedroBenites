@@ -76,16 +76,39 @@ body {
   .ul__li-text {
     text-decoration: none; } }
 
+/*mapa*/
+/*mixin*/
 /* footer */
 .footer {
   background-color: #011A36;
   color: var(--bs-white); }
-
-.div__content-column {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  width: 30rem; }
+  .footer__content {
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline; }
+    @media screen and (max-width: 1024px) {
+      .footer__content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 2rem; } }
+    @media screen and (max-width: 768px) {
+      .footer__content {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem; } }
+    @media screen and (max-width: 540px) {
+      .footer__content {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem; } }
 
 .div__redes {
   display: flex;
@@ -99,9 +122,6 @@ body {
 
 div > p > a {
   color: white; }
-
-.footer .img__footer {
-  text-align: center; }
 
 @media screen and (max-width: 767px) {
   .footer__content {
@@ -141,19 +161,19 @@ div > p > a {
   border-radius: .4rem;
   padding: 1rem 1rem 0 1rem; }
 
-.card {
-  align-items: center;
-  height: auto; }
-  .card-text {
-    font-size: auto;
-    text-align: justify; }
-
 .img__fondo-fijo {
   background-image: url(../assets/img/index/fondoMuseo.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center; }
+
+.card {
+  align-items: center;
+  height: auto; }
+  .card-text {
+    font-size: auto;
+    text-align: justify; }
 
 /*mapa*/
 /*mixin*/
@@ -204,6 +224,7 @@ div > p > a {
 
 /* fin museo */
 /*Mixin*/
+/*odisea*/
 .article__container {
   display: flex;
   flex-flow: row wrap;
