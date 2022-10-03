@@ -50,12 +50,20 @@ $breakpoints:(
     }
 }
 
-
-.img__tarjetas {
-    width:100%;
+.img{
+    &__tarjetas{
+        width:100%;
     height: 100%;
     border-radius: .4rem;
     padding: 1rem 1rem 0 1rem;
+    }
+    &__fondo-fijo{
+        background-image: url(../assets/img/index/fondoMuseo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    }
 }
 
 .card {
@@ -67,11 +75,3 @@ $breakpoints:(
     }
 }
 
-.img__fondo-fijo {
-    background-image: url(../assets/img/index/fondoMuseo.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-
-}
