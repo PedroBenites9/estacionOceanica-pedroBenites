@@ -4,7 +4,7 @@ Este proyecto esta basado a la pagina de [Estacion Oceanica](https://www.estacio
 
 ## Que se puede ver en este proyecto?
 
-Claramente la idea principal es lograr un diseño sumamente distanta de **Estacion Oceanica** original, con el objetivo de que la pagina sea atractiva y a la vez contenga efectos especiales. 
+Claramente la idea principal es lograr un diseño sumamente distanta de la pagina **Estacion Oceanica** original, con el objetivo de que la pagina sea atractiva para los visitantes y a la vez contenga efectos especiales. 
 
 Tenemos hasta entonces 6 paginas, incluyendo el index.html
 * Index
@@ -14,7 +14,7 @@ Tenemos hasta entonces 6 paginas, incluyendo el index.html
 * Entradas
 * Nosotros
 
-A la ves esta pagina es responsive, por ende los dispositivos mobiles, tablets o netbooks, tendran distinto diseño, pero la navegacion e informacion es similar.
+A su vez esta pagina es responsive, por ende los dispositivos mobiles, tablets o netbooks, tendran distinto diseño, pero la navegacion e informacion es similar.
 
 ## Que tecnologias se utilizó en este proyecto?
 
