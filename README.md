@@ -38,3 +38,10 @@ Lo que se usó a lo largo del desarrollo de la pagina web fueron las siguientes 
     * FilaZilla
     * GitHub Pages
 
+## Del Autor
+
+Mi nombre es **Pedro Benites**, tengo 23 años, vivo en Argentina, Capital Federal. Inicie en el mundo de la computacion en la secundaria, estudie en un colegio tecnico (Escuela Tecnica N°32 D.E. 14 "José de San Martin"), con la espacilidad de Tecnico en Computacion. Finalizando mis ultimos años dentro de la secundaria, me adentre al mundo de la programacion orientada a objetos, mi primer lenguaje de programación fue Java. Hasta el dia de hoy inicie mis cursos por Udemy cursando React y full stack. 
+
+No obstante sentia un estancamiento en mis aprendizaje, hasta que me adentre a Coder House, en donde me ayudaron muchisimo a progresar en el area de diseño Web. 
+
+Mi objetivo es poder terminar siendo un desarrollador FullStack. Pero hasta en entonces comenzamos con lo basico. 
