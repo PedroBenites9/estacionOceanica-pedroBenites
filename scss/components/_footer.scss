@@ -39,6 +39,7 @@ $breakpoints:(
     color: var(--bs-white);
     &__content{
         padding: 2rem;
+    
         @include prop-flex( row, wrap, space-around, baseline );
         @include media-down(lg){
             @include prop-flex( row, wrap, space-between, baseline);
@@ -51,6 +52,17 @@ $breakpoints:(
         @include media-down(sm){
             @include prop-flex( column, wrap, center, center );
             padding: 2rem;
+            
+        }
+    }
+    &__content-items{
+        @include media-down(sm){
+            padding: 1rem;
+            text-align: center;
+        }
+        @include media-down(md){
+            padding: 1rem;
+            text-align: center;
         }
     }
 }
@@ -69,15 +81,4 @@ $breakpoints:(
 
 div>p>a {
     color: white;
-}
-
-@media screen and (max-width:767px){ 
-    .footer{
-        &__content{
-            text-align: center;
-        }
-        &__content-items{
-            padding: 1rem;
-        }
-    }
 }

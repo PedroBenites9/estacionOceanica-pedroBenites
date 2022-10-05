@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/stlye.css">
     <title>Entradas</title>
 </head>
@@ -87,57 +88,55 @@
     <!-- fin Header -->
     <h1 class="h1__title">Entradas</h1>
     <main class="main__content-entradas">
-        <div class=" div__section-entradas">
-            <section class="d-flex flex-row justify-content-center align-items-center gap-5 flex-wrap">
-                <!-- tarjeta -->
-                <div class="d-flex flex-column border border-gray border-4 section__img-entradas">
-                    <img class="" src="../assets/img/entradas/Box pasaportes ticketera - Mayor-promo.jpg"
-                        alt="img_entrada1">
-                    <div class="p-2 d-flex align-items-center justify-content-center gap-3">
-                        <button type="button" class="btn btn-outline-dark" type="submit">Comprar</button>
-                        <select name="" id="">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
-                            <option value="">5</option>
-                            <option value="">6</option>
-                        </select>
-                    </div>
+        <section class="section__container-card">
+            <!-- tarjeta -->
+            <div data-aos="flip-left" class="section__img">
+                <img class="section__img-entradas"
+                    src="../assets/img/entradas/Box pasaportes ticketera - Mayor-promo.jpg" alt="img_entrada1">
+                <div class="p-2 d-flex align-items-center justify-content-center gap-3">
+                    <button type="button" class="btn btn-outline-dark" type="submit">Comprar</button>
+                    <select name="" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                    </select>
                 </div>
-                <!-- tarjeta -->
-                <div class="d-flex flex-column border border-gray border-4 section__img-entradas">
-                    <img class="" src="../assets/img/entradas/Box pasaportes ticketera - Menor-promo.jpg"
-                        alt="img_entrada1">
-                    <div class="p-2 d-flex align-items-center justify-content-center gap-3">
-                        <button type="button" class="btn btn-outline-dark" type="submit">Comprar</button>
-                        <select name="" id="">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
-                            <option value="">5</option>
-                            <option value="">6</option>
-                        </select>
-                    </div>
+            </div>
+            <!-- tarjeta -->
+            <div data-aos="flip-left" class="section__img">
+                <img class="section__img-entradas"
+                    src="../assets/img/entradas/Box pasaportes ticketera - Menor-promo.jpg" alt="img_entrada1">
+                <div class="p-2 d-flex align-items-center justify-content-center gap-3">
+                    <button type="button" class="btn btn-outline-dark" type="submit">Comprar</button>
+                    <select name="" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                    </select>
                 </div>
-                <!-- tarjeta -->
-                <div class="d-flex flex-column border border-gray border-4 section__img-entradas">
-                    <img class="" src="../assets/img/entradas/rp.jpg" alt="img_entrada1">
-                    <div class="p-2 d-flex align-items-center justify-content-center gap-3">
-                        <button type="button" class="btn btn-outline-dark" type="submit">Comprar</button>
-                        <select name="" id="">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
-                            <option value="">5</option>
-                            <option value="">6</option>
-                        </select>
-                    </div>
+            </div>
+            <!-- tarjeta -->
+            <div data-aos="flip-left" class="section__img">
+                <img class="section__img-entradas" src="../assets/img/entradas/rp.jpg" alt="img_entrada1">
+                <div class="p-2 d-flex align-items-center justify-content-center gap-3">
+                    <button type="button" class="btn btn-outline-dark" type="submit">Comprar</button>
+                    <select name="" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                    </select>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <div>
             <section class="containter m-5 d-flex flex-column align-items-center justify-content-center">
                 <p>Precios desde cartelera</p>
@@ -163,7 +162,7 @@
                                 <td>$1000</td>
                             </tr>
                             <tr class="table__item">
-                                <td class="table__edades-sub">Odisea Submarina + Ralidad Virtual</td>
+                                <td class="table__edades-sub">Odisea Submarina + Realidad Virtual</td>
                                 <td>+12</td>
                                 <td>$2000</td>
 
@@ -194,12 +193,11 @@
     <!-- inicio footer -->
     <footer>
         <div class="container-fluid footer">
-            <div class="row p-5 footer__content">
-                <div class="col-xs-12 col-md-6 col-lg-3 img__footer ">
+            <div class="footer__content">
+                <div class="footer__content-itmes">
                     <img class="" src="../assets/img/index/logo.PNG" alt="logo__footer">
                 </div>
-                <div
-                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
+                <div class="footer__content-items">
                     <p class="fs-5 fw-bolder">Redes Sociales</p>
                     <div class="mb-2">
                         <a class="text-white text-decoration-line" href="https://www.facebook.com/estacionoceanica">
@@ -213,28 +211,26 @@
                         <a href="#" class="text-secondary text-decoration-none"></a>
                     </div>
                 </div>
-                <div
-                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
+                <div class="footer__content-items">
                     <p class="fs-5 fw-bolder">links</p>
                     <div class="mb-2">
-                        <a href="pages/museo_del_mar.html" class="text-white text-decoration-line">Museo del Mar</a>
+                        <a href="../pages/museo_del_mar.html" class="text-white text-decoration-line">Museo del Mar</a>
                     </div>
                     <div class="mb-2">
-                        <a href="pages/submarino.html" class="text-white text-decoration-line">Odisea Submarina</a>
+                        <a href="../pages/submarino.html" class="text-white text-decoration-line">Odisea Submarina</a>
                     </div>
                     <div class="mb-2">
-                        <a href="pages/rp.html" class="text-white text-decoration-line">Rescate Profundo</a>
+                        <a href="../pages/rp.html" class="text-white text-decoration-line">Rescate Profundo</a>
                     </div>
                     <div class="mb-2">
-                        <a href="pages/nosotros.html" class="text-white text-decoration-line">Nosotros</a>
+                        <a href="../pages/nosotros.html" class="text-white text-decoration-line">Nosotros</a>
                     </div>
                     <div class="mb-2">
-                        <a href="pages/entradas.html" class="text-white text-decoration-line">Entradas</a>
+                        <a href="../pages/entradas.html" class="text-white text-decoration-line">Entradas</a>
                     </div>
                 </div>
-                <div
-                    class="col-xs-12 col-md-6 col-lg-3 justify-content-center align-items-center footer__content-items">
-                    <p class="fs-5 fw-bolder">Contacto</p>
+                <div class="footer__content-items">
+                    <p class="fs-5 fw-bolder">Contactos</p>
                     <div class="mb-2">
                         +54 1121835859
                     </div>
@@ -250,7 +246,14 @@
     </footer>
     <!-- fin footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        //AOS.init();// inicialización básica
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1100
+        });
+    </script>
 </body>
 
 </html>
