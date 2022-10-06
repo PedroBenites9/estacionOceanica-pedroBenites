@@ -243,7 +243,9 @@ div > p > a {
       flex-flow: column wrap;
       justify-items: center;
       align-items: center;
-      gap: 3rem; } }
+      gap: 3rem; }
+      .article__container .carousel__container {
+        width: 100%; } }
   @media screen and (max-width: 768px) {
     .article__container {
       display: flex;

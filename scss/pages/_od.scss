@@ -21,11 +21,7 @@ $breakpoints:(
     justify-items: $just;
     align-items: $align;
 }
-@mixin media-up($breakpoint){
-    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
-        @content;
-    }
-}
+
 @mixin media-down($breakpoint){
     @media screen and (max-width : map-get($breakpoints, $breakpoint)) {
         @content;
@@ -38,7 +34,11 @@ $breakpoints:(
         @include prop-flex( row, wrap ,center ,center, 5rem);
         @include media-down(sm){
             @include prop-flex( column, wrap ,center ,center, 3rem);
-            
+            .carousel{
+                &__container{
+                    width: 100%
+                }
+            }
         }
         @include media-down(md){
             @include prop-flex( column, wrap ,center ,center, 2rem);
