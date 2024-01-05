@@ -1,6 +1,6 @@
 # Estacion Oceanica
 
-Este proyecto esta basado a la pagina de [Estacion Oceanica](https://www.mundogea.com.ar/sitio2023/gea-marina/) (Actualmente llamado "Gea Marina". Con la finalidad de poder implementar nuevas ideas y nuevo rediseño a dicha pagina. Este lugar se encuentra ubicado en el barrio Palermo, Ciudad Autonoma de Buenos Aires, Argentina. 
+Este proyecto esta basado a la pagina de [Estacion Oceanica](https://www.mundogea.com.ar/sitio2023/gea-marina/) (Actualmente llamado "Gea Marina"). Con la finalidad de poder implementar nuevas ideas y nuevo rediseño a dicha pagina. Este lugar se encuentra ubicado en el barrio Palermo, Ciudad Autonoma de Buenos Aires, Argentina. 
 
 ## Que se puede ver en este proyecto?
 
